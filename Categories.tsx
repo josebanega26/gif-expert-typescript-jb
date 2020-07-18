@@ -1,11 +1,10 @@
 import React from "react";
-
 interface CategoriesProps {
   data: string[];
 }
 const Categories = ({ data }: CategoriesProps) => {
   const getItem = (item: string,id:string) => (
-    <div id={id}>
+    <div key={id}>
       <h2>{item}</h2>
     </div>
   );
